@@ -1,7 +1,8 @@
-package com.example.swing_assignment
+package com.example.swing_assignment.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.swing_assignment.R
 import com.example.swing_assignment.databinding.MainActivityBinding
 
 class MainActivity : AppCompatActivity() {
