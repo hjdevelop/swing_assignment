@@ -56,4 +56,16 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.11.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
 
+    // Coil
+    implementation("io.coil-kt:coil:2.4.0")
+
+    //Kotlin Extensions (by viewModels)
+    implementation("androidx.activity:activity-ktx:1.8.2")
+    implementation("androidx.fragment:fragment-ktx:1.6.2")
+
+    //Coroutine
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.2")
+
+    //Paging
+    implementation("androidx.paging:paging-runtime-ktx:3.3.0-beta01")
 }
