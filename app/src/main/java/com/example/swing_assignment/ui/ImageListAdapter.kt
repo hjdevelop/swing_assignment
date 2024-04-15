@@ -5,6 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
+import com.example.swing_assignment.R
 import com.example.swing_assignment.data.model.ImageDataModel
 import com.example.swing_assignment.databinding.ImageItemBinding
 
@@ -39,7 +41,17 @@ class ImageListAdapter () : ListAdapter<ImageDataModel, ImageListAdapter.ViewHol
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(item : ImageDataModel) = with(binding) {
-            ivImage.setImageResource(item.imageUrl)
+            ivImage.load(item.imageUrl)
+
+            btnLike.setOnClickListener {
+                if (item.isLiked) {
+                    btnLike.load(R.drawable.ic_heart)
+                }
+                else {
+                    btnLike.load(R.drawable.ic_heart_filled)
+                }
+                item.isLiked = !item.isLiked
+            }
         }
     }
 }

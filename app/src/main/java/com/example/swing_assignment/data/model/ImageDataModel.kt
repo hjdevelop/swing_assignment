@@ -1,6 +1,6 @@
 package com.example.swing_assignment.data.model
 
 data class ImageDataModel (
-    val imageUrl : Int,
-    val isLiked : Boolean
+    val imageUrl : String,
+    var isLiked : Boolean
 )
