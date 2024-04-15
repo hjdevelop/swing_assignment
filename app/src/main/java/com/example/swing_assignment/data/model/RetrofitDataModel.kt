@@ -2,7 +2,7 @@ package com.example.swing_assignment.data.model
 
 import com.google.gson.annotations.SerializedName
 
-class RetrofitDataModel (
+data class RetrofitDataModel (
     val results: List<Result>,
     val total: Int,
     @SerializedName("total_pages")
